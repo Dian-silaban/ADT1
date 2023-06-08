@@ -1,0 +1,26 @@
+  #include <iostream>
+ #include <string>
+ 
+ using namespace std;
+ 
+ struct Mahasiswa{
+     string nama;
+     double ipk;
+ };
+ 
+ struct Node{
+     Mahasiswa mhs;
+     Node*next;
+ };
+ 
+ int main(){
+     Mahasiswa mhs;
+     mhs.nama = " dian";
+     mhs.ipk = 3.5;
+     
+     Node* node = new Node();
+     node->mhs = mhs;
+     
+     cout<<"nama:"<<mhs.nama<<endl;
+     cout<<"IPK:"<<mhs.ipk<<endl;
+ }
